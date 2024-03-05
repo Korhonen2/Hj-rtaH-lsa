@@ -1,0 +1,79 @@
+.menu{
+    position: absolute;
+    top:75px;
+    left: 230px;
+     list-style: none;
+ }
+ 
+ .pageheader{
+     background-color: rgb(102, 125, 108);
+     height: 122px;
+     
+ }
+ 
+ a{
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: rgb(219, 225, 220);
+     color: black;
+     padding: 7px;
+     border-radius: 5px;
+     text-decoration: none;
+     margin: 15px;
+     font-size: 20px;
+ }
+ 
+ a:hover{
+     background-color: rgb(280, 275, 275);
+ }
+
+ .h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 64px;
+}
+
+#search-box {
+    display: inline-block;
+}
+
+#search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    right:10px;
+    top:-70px;
+}
+
+footer{
+    position:absolute;
+    top:2150px;
+    left:0px;
+    width: 100%;
+    background-color: rgb(102, 125, 108);
+    height: 260px;
+    margin-top: 20px;
+}
+
+#spalt1{
+    position: absolute;
+    left:60px;
+    top:50px;
+}
+#spalt2{
+    position: absolute;
+    left:460px;
+    top:50px;
+}
+#spalt3{
+    position: absolute;
+    left:700px;
+    top:50px;
+}
+#footlog{
+    position: absolute;
+    right:60px;
+    top: 60px;
+}
