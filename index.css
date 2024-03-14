@@ -1,154 +1,139 @@
-.menu{
-   position: absolute;
-   top:75px;
-   left: 230px;
-   list-style: none;
+ul {
+    display: flex;
+    list-style: none;
+    padding:10px;
+    margin:0;
+    position:absolute;
+    top: 200px;
+    left: 0px;
+    width: 97vw;
+    background-color: #8eb29f ;
     
+}
+
+li a {
+   text-decoration: none;
+   color: black;
+   padding: 5px 10px;
+   border-radius: 10px;
+   background-color: rgb(219, 225, 220);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li:last-child {
+   margin-right: 0;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+   
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(280, 275, 275);
+    color: rgb(8, 8, 8);
+    text-align: center;
 }
 
 .pageheader{
-    background-color: rgb(102, 125, 108);
-    height: 122px;
-    
+    background-color: #828784;
+    height: 200px;
+    width: 100%;
+}
+#headerlogga{
+    margin-left: 400px;
+    margin-top: 15px;
 }
 
-a{
+.knapp{
+    border-radius: 10px;
+    font-size:large;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(219, 225, 220);
     color: black;
-    padding: 7px;
-    border-radius: 5px;
+    background-color: ghostwhite;
+    border: 2px solid #000;
     text-decoration: none;
-    margin: 15px;
-    font-size: 20px;
-}
-
-a:hover{
-    background-color: rgb(280, 275, 275);
-}
-
-.h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    font-size: 64px;
-}
-
-#search-box {
-    display: inline-block;
-}
-
-#search-input {
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: absolute;
-    right:10px;
-    top:-70px;
+   
+}
+.knapp:hover{
+    background-color: rgb(101, 101, 125);
+}
+
+#easter{
+    width: 97vw;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+#kopnu{
+    position: absolute; /* Positionerar knappen relativt till förälderelementet */
+    top: 650px; /* Placerar knappen vertikalt i mitten */
+    left: 550px;
+    font-size: 30px;
+}
+
+
+h2{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .startpicture{
+    position: absolute;
     height: 200px;
-    width: 100%;
+    width: 99%;
     
 }
 
 p{
     font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.sections{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.sections img{
+    border-radius: 10px;
+}
+.separator{
+    width: 100px;
+}
+
+footer {
+    display: flex; /* Skapar en flex-container */
+    flex-direction: row; /* Placerar elementen bredvid varandra i en rad */
+    justify-content: space-around; /* Jämnt fördelat utrymme mellan elementen */
+    align-items: center; /* Centrerar elementen vertikalt */
+    background-color: #8eb29f; /* Bakgrundsfärg på footern */
+    color:#000; /* Textfärg på footern */
+    padding: 20px; /* Inre utfyllnad för footern */
+}
+
+.contact {
+    flex: 1; /* Gör att varje kontakt-div tar upp lika mycket utrymme */
+    text-align: center; /* Centrerar texten i varje kontakt-div */
+    margin: 0 10px; /* Ger lite marginal mellan varje kontakt-div */
     font-family:'Times New Roman', Times, serif;
-
+    font-size: 20px;
 }
-
-#stycke1{
-    position: absolute;
-    top:400px;
-    left:100px;
-}
-#massagepic{
-    position: absolute;
-    top:400px;
-    left:680px;
-}
-
-#stycke2{
-    position: absolute;
-    top:700px;
-    left:680px;
-}
-#stycke2pic{
-    position: absolute;
-    top:700px;
-    left:100px;
-}
-
-#stycke3{
-    position: absolute;
-    top:1100px;
-    left:100px;
-}
-#stycke3pic{
-    position: absolute;
-    top:1100px;
-    left:680px;
-}
-
-#stycke4{
-    position: absolute;
-    top:1500px;
-    left:680px;
-}
-#stycke4pic{
-    position: absolute;
-    top:1500px;
-    left:80px;
-}
-#stycke4pic2{
-    position: absolute;
-    top: 1500px;
-    left:250px;
-}
-
-#stycke5{
-    position: absolute;
-    top:1800px;
-    left:100px;
-}
-#stycke5pic{
-    position: absolute;
-    top:1800px;
-    left:680px;
-}
-
-footer{
-    position:absolute;
-    top:2150px;
-    left:0px;
-    width: 100%;
-    background-color: rgb(102, 125, 108);
-    height: 260px;
-    margin-top: 20px;
-}
-
-#spalt1{
-    position: absolute;
-    left:60px;
-    top:50px;
-}
-#spalt2{
-    position: absolute;
-    left:460px;
-    top:50px;
-}
-#spalt3{
-    position: absolute;
-    left:700px;
-    top:50px;
-}
-#footlog{
-    position: absolute;
-    right:60px;
-    top: 60px;
+.footerlogga{
+    border-radius: 10px;
 }
 
 .cta-button{
@@ -156,6 +141,7 @@ footer{
    font-size:large;
    background-color: ghostwhite;
    border: 2px solid #000;
+   position: absolute;
 }
 .cta-button:hover{
     background-color: rgb(101, 101, 125);

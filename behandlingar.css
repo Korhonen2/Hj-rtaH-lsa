@@ -1,80 +1,148 @@
-.menu{
-    position: absolute;
-    top:75px;
-    left: 230px;
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+ul {
+    display: flex;
     list-style: none;
-     
- }
- 
- .pageheader{
-     background-color: rgb(102, 125, 108);
-     height: 122px;
-     
- }
- 
- a{
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: rgb(219, 225, 220);
-     color: black;
-     padding: 7px;
-     border-radius: 5px;
-     text-decoration: none;
-     margin: 15px;
-     font-size: 20px;
- }
- 
- a:hover{
-     background-color: rgb(280, 275, 275);
- }
+    padding:10px;
+    margin:0;
+    position:absolute;
+    top: 200px;
+    left: 0px;
+    width: 97vw;
+    background-color: #8eb29f ;
+    
+}
 
- .h1{
+li a {
+   text-decoration: none;
+   color: black;
+   padding: 5px 10px;
+   border-radius: 10px;
+   background-color: rgb(219, 225, 220);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li:last-child {
+   margin-right: 0;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+   
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(280, 275, 275);
+    color: rgb(8, 8, 8);
+    text-align: center;
+}
+
+.pageheader{
+    background-color: #828784;
+    height: 200px;
+    width: 100%;
+}
+#headerlogga{
+    margin-left: 400px;
+    margin-top: 15px;
+}
+ 
+ 
+
+ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    position: relative;
-    z-index: 1;
     font-size: 64px;
 }
 
-#search-box {
-    display: inline-block;
+.picture{
+    border-radius: 10px;
 }
 
-#search-input {
+p{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#info{
+    text-align: center;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#bokadirekt{
+    border-radius: 10px;
+    font-size:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: ghostwhite;
+    border: 2px solid #000;
+    text-decoration: none;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: absolute;
-    right:10px;
-    top:-70px;
+ }
+ #bokadirekt:hover{
+     background-color: rgb(101, 101, 125);
+ }
+
+
+.section {
+    text-align: center; 
+    width:1010px;
+    margin:auto;
 }
 
-footer{
-    position:absolute;
-    top:2150px;
-    left:0px;
-    width: 100%;
-    background-color: rgb(102, 125, 108);
-    height: 260px;
-    margin-top: 20px;
+.products {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px;
+    margin-top: 100px;
 }
 
-#spalt1{
-    position: absolute;
-    left:60px;
-    top:50px;
+.product {
+    width: calc(33.33% - 20px);
+    text-align: center;
 }
-#spalt2{
-    position: absolute;
-    left:460px;
-    top:50px;
+
+.product p {
+    margin-top: 5px;
 }
-#spalt3{
-    position: absolute;
-    left:700px;
-    top:50px;
+
+.product img {
+  
+    border-radius: 10px; 
 }
-#footlog{
-    position: absolute;
-    right:60px;
-    top: 60px;
+
+footer {
+    display: flex; /* Skapar en flex-container */
+    flex-direction: row; /* Placerar elementen bredvid varandra i en rad */
+    justify-content: space-around; /* Jämnt fördelat utrymme mellan elementen */
+    align-items: center; /* Centrerar elementen vertikalt */
+    background-color: #8eb29f; /* Bakgrundsfärg på footern */
+    color:#000; /* Textfärg på footern */
+    padding: 20px; /* Inre utfyllnad för footern */
+    
+}
+
+.contact {
+    flex: 1; /* Gör att varje kontakt-div tar upp lika mycket utrymme */
+    text-align: center; /* Centrerar texten i varje kontakt-div */
+    margin: 0 10px; /* Ger lite marginal mellan varje kontakt-div */
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.footerlogga{
+    border-radius: 10px;
 }

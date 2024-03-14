@@ -1,103 +1,122 @@
-.menu{
-    position: absolute;
-    top:75px;
-    left: 230px;
-    list-style: none;
-     
- }
- 
- .pageheader{
-     background-color: rgb(102, 125, 108);
-     height: 122px;
-     
- }
- 
- a{
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: rgb(219, 225, 220);
-     color: black;
-     padding: 7px;
-     border-radius: 5px;
-     text-decoration: none;
-     margin: 15px;
-     font-size: 20px;
- }
- 
- a:hover{
-     background-color: rgb(280, 275, 275);
- }
 
- .h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+ul {
+    display: flex;
+    list-style: none;
+    padding:10px;
+    margin:0;
+    position:absolute;
+    top: 200px;
+    left: 0px;
+    width: 97vw;
+    background-color: #8eb29f ;
+    
+}
+
+li a {
+   text-decoration: none;
+   color: black;
+   padding: 5px 10px;
+   border-radius: 10px;
+   background-color: rgb(219, 225, 220);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li:last-child {
+   margin-right: 0;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+   
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(280, 275, 275);
+    color: rgb(8, 8, 8);
+    text-align: center;
+}
+ 
+.pageheader{
+    background-color: #828784;
+    height: 200px;
+    width: 100%;
+}
+#headerlogga{
+    margin-left: 400px;
+    margin-top: 15px;
+}
+ 
+
+
+ h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     position: relative;
     z-index: 1;
     font-size: 64px;
 }
-
-#search-box {
-    display: inline-block;
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
 }
 
-#search-input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: absolute;
-    right:10px;
-    top:-70px;
+p{
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #stycke1 {
     position: absolute;
-    top:300px;
-    left:50px;
+    top:350px;
+    left:100px;
+    width: 500px;
+}
+#hlrdockor{
+    position: absolute;
+    top:350px;
+    right:100px;
 }
 #stycke2 {
     position: absolute;
-    top:500px;
-    left:50px;
+    top:800px;
+    left:100px;
+    width: 600px;
 }
-
-#hlrrådet {
+#hlrdocka{
     position: absolute;
-    top:900px;
-    left:50px;
-}
-
-#adult {
-    position: absolute;
-    top:850px;
-    left:50px;
+    top: 950px;
+    right:100px;
 }
 
 footer{
-    position:absolute;
-    top:2150px;
-    left:0px;
-    width: 100%;
-    background-color: rgb(102, 125, 108);
-    height: 260px;
-    margin-top: 20px;
-}
-
-#spalt1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #8eb29f;
+    color: #000;
+    padding: 20px;
     position: absolute;
-    left:60px;
-    top:50px;
+    top:1550px;
+    width: 95%;
 }
-#spalt2{
-    position: absolute;
-    left:460px;
-    top:50px;
+.contact {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px; 
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
 }
-#spalt3{
-    position: absolute;
-    left:700px;
-    top:50px;
-}
-#footlog{
-    position: absolute;
-    right:60px;
-    top: 60px;
+.footerlogga{
+    border-radius: 10px;
 }

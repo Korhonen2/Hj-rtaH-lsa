@@ -1,79 +1,146 @@
-.menu{
-    position: absolute;
-    top:75px;
-    left: 230px;
-     list-style: none;
- }
- 
- .pageheader{
-     background-color: rgb(102, 125, 108);
-     height: 122px;
-     
- }
- 
- a{
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: rgb(219, 225, 220);
-     color: black;
-     padding: 7px;
-     border-radius: 5px;
-     text-decoration: none;
-     margin: 15px;
-     font-size: 20px;
- }
- 
- a:hover{
-     background-color: rgb(280, 275, 275);
- }
-
- .h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    font-size: 64px;
-}
-
-#search-box {
-    display: inline-block;
-}
-
-#search-input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: absolute;
-    right:10px;
-    top:-70px;
-}
-
-footer{
+ul {
+    display: flex;
+    list-style: none;
+    padding:10px;
+    margin:0;
     position:absolute;
-    top:2150px;
-    left:0px;
-    width: 100%;
-    background-color: rgb(102, 125, 108);
-    height: 260px;
-    margin-top: 20px;
+    top: 200px;
+    left: 0px;
+    width: 97vw;
+    background-color: #8eb29f ;
+    
 }
 
-#spalt1{
-    position: absolute;
-    left:60px;
-    top:50px;
+li a {
+   text-decoration: none;
+   color: black;
+   padding: 5px 10px;
+   border-radius: 10px;
+   background-color: rgb(219, 225, 220);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
 }
-#spalt2{
-    position: absolute;
-    left:460px;
-    top:50px;
+
+
+li {
+    display: inline-block;
+    margin-right: 10px;
 }
-#spalt3{
-    position: absolute;
-    left:700px;
-    top:50px;
+
+li:last-child {
+   margin-right: 0;
 }
-#footlog{
-    position: absolute;
-    right:60px;
-    top: 60px;
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+   
 }
+
+li a:hover:not(.active) {
+    background-color: rgb(280, 275, 275);
+    color: rgb(8, 8, 8);
+    text-align: center;
+}
+ 
+.pageheader{
+    background-color: #828784;
+    height: 200px;
+    width: 100%;
+}
+#headerlogga{
+    margin-left: 400px;
+    margin-top: 15px;
+}
+ 
+
+ h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 50px;
+}
+h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    margin-top: 150px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#aloevera{
+    border-radius: 10px;
+    font-size:large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: ghostwhite;
+    border: 2px solid #000;
+    position: absolute;
+    text-decoration: none;
+    padding: 5px;
+ }
+ #aloevera:hover{
+     background-color: rgb(101, 101, 125);
+ }
+
+ .section1{
+    display: flex;
+    justify-content: center; /* Placerar elementen med mellanrum mellan dem */
+    align-items:flex-start; /* Centrerar vertikalt */
+    gap: 20px;
+    margin:auto;
+    margin-top: -130px;
+ }
+ .section2 {
+    text-align: center; /* Centrera innehållet horisontellt */
+    width:800px;
+    margin:auto;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap; /* Gör att produkterna hamnar på flera rader */
+    justify-content: center; /* Centrerar produkterna horisontellt */
+    gap: 30px; /* Avstånd mellan produkterna */
+}
+
+.product {
+    width: calc(33.33% - 20px); /* Bredden på varje produkt (33.33% av förälderns bredd minus avståndet mellan produkterna) */
+    text-align: center; /* Vänsterjustera texten */
+}
+
+.product p {
+    margin-top: 5px;
+}
+
+.product img {
+    width: 100%; /* Fyller hela bredden av produktens område */
+    border-radius: 10px; /* Rundade hörn för bilden */
+}
+
+footer {
+    display: flex; /* Skapar en flex-container */
+    flex-direction: row; /* Placerar elementen bredvid varandra i en rad */
+    justify-content: space-around; /* Jämnt fördelat utrymme mellan elementen */
+    align-items: center; /* Centrerar elementen vertikalt */
+    background-color: #8eb29f; /* Bakgrundsfärg på footern */
+    color:#000; /* Textfärg på footern */
+    padding: 20px; /* Inre utfyllnad för footern */
+    
+}
+
+.contact {
+    flex: 1; /* Gör att varje kontakt-div tar upp lika mycket utrymme */
+    text-align: center; /* Centrerar texten i varje kontakt-div */
+    margin: 0 10px; /* Ger lite marginal mellan varje kontakt-div */
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.footerlogga{
+    border-radius: 10px;
+}
+

@@ -6,56 +6,85 @@
     <title>Webbshop</title>
     <link rel="stylesheet" href="webbshop.css">
 </head>
-<body>
+<body onload="buildMenu()">
     <header class="pageheader">
-        <img src="images/logga.png" width="200">
-        <h1 class="h1">Webbshop</h1>
-    
-    
-<nav>
-    <ul class="menu">
-        <li>
-            <a href="index.html">Startsida</a>
-            <a href="behandlingar.html">Behandlingar</a>
-            <a href="omoss.html">Om oss</a>
-            <a href="webbshop.html">Webbshop</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="hlr.html">HLR</a>
-            <a href="massage.html">Massage</a>
-            <div id="search-box">
-                <input type="text" id="search-input" placeholder="Sök">
-            </div>
-        </li>
-    </ul>
-</nav>
+        <img id="headerlogga" src="images/morklogga.png" width="400">
+        <ul id="menu"></ul>
 </header>
 
+<br><h1>Webbshop</h1>
+<div class="section1">
+    <p>
+    Jag är även återförsäljare inom Forever-living produkter baserade på Alovera.
+    <br>Följ länken nedan för att komma vidare till webbshopen.
+    <br><br><a id="aloevera"href="https://aloeeva.myforever.cc" target="_blank">Forever-living</a>
+    </p>
+</div>
+
+<br><br><div class="section2">   
+    <h2>Våra bästsäljare:</h2>
+    <div class="products">
+<div class="product">
+    <img src="images/gelly.png" width="200">
+    <p><b>Gelly-</b> Används bland annat på små brännskador, solsveda och insteksbett.</p>
+</div>
+<div class="product">
+    <img src="images/propolis.png" width="200">
+    <p><b>Propolis-</b> Används på torr och narig hud, ex händer och armbågar.</p>
+</div>
+<div class="product">
+    <img src="images/lip.png" width="200">
+    <p><b>Lips-</b> Återfuktar läpparna.</p>
+</div>
+<div class="product">
+    <img src="images/deo.png" width="200">
+    <p><b>Ever-shield (Deo)-</b> En mjukgörande deodaernat med mild doft som inte innehåller aluminiumklorid.</p>
+</div>
+<div class="product">
+    <img src="images/soap.png" width="200">
+    <p><b>Liquid soap-</b> En tvål för hela kroppen med flera hudvårdande ingridienser.</p>
+</div>
+<div class="product">
+    <img src="images/lotion.png" width="200">
+    <p><b>Cooling lotion-</b> Perfekt att använda på trötta och stela muskler, innehåller bland annat mentol och eukalyptus.</p>
+</div>
+<div class="product">
+    <img src="images/toothgel.png" width="200">
+    <p><b>Bright toothgel-</b> Aloevera baserad tandkräm utan flour.</p>
+</div>
+<div class="product">
+    <img src="images/aloeveragel.png" width="200">
+    <p><b>Aloe Vera Gel-</b> Vårt bästsäljande kosttillskott Forever Aloe Vera Gel passar alla som vill ha en ny vana i vardagen.</p>
+</div>
+</div>
+</div>
+
 <footer>
-    <div id="spalt1">
-    <h3>Kontakt</h3>
-        <p>
-            Mail: hjartahalsa@hotmail.com
+    <div class="contact">
+        <h3>Kontakt</h3>
+        Mail: hjartahalsa@hotmail.com
         <br>Tel: 0734 23 99 55
-        <br>Adress: Torvmossevägen 5
-        <br>138 37 Älta
-        </p>
+        <br>Adress: Vendelsö skolväg 8
+        <br>136 71 Vendelsö
     </div>
-    <div id="spalt2">
-        <h3>Öppettider</h3>
-        <p>
-                 Måndag-fredag: 8-17
+    <div class="contact">
+            <h3>Öppettider</h3>
+            Måndag-fredag: 8-17
             <br>Lördag: 9-15
             <br>Söndag: 9-17
-        </p>
     </div>
-    <div id="spalt3">
+    <div class="contact">
         <h3>Länkar</h3>
-        <p>
-            Instagram
-            <br>Facebook
-        </p>
+        <a href="https://www.instagram.com/altas.lugna.oas/" target="_blank">
+            <img class="footerlogga" src="images/instagram.jpg" width="40">
+        </a>
+        <a href="https://www.facebook.com/Altaslugnaoas/" target="_blank">
+            <img class="footerlogga" src="images/facebook_logo.webp" width="40">
+        </a>
     </div>
-    <img id=footlog src="images/logga.png" width="200">
+    <img src="images/morklogga.png" width="200">
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
