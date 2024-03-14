@@ -3,7 +3,7 @@ function buildMenu()
     var links = [
         ["Startsida", "index.html"],
         ["Behandlingar", "behandlingar.html"],
-        ["Webbshop", "Webbshop.html"],
+        ["Webbshop", "webbshop.html"],
         ["HLR", "hlr.html"],
         ["Om oss", "omoss.html"],
         ["Kontakt", "kontakt.html"],
