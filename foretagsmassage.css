@@ -80,11 +80,10 @@ p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1{
-    font-size: 64px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+#startbild{
+    width: 97vw;
+    border-radius: 10px;
 }
-
 
 footer {
     display: flex; /* Skapar en flex-container */

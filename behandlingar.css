@@ -58,12 +58,10 @@ li a:hover:not(.active) {
     margin-top: 15px;
 }
  
- 
-
- h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    font-size: 64px;
+#startbild{
+    width: 97vw;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .picture{
@@ -99,7 +97,7 @@ p{
 
 .section {
     text-align: center; 
-    width:1010px;
+    width:1100px;
     margin:auto;
 }
 
